@@ -1,0 +1,45 @@
+# API 키 (절대 커밋 금지)
+data/keys/
+data/건축물_대장_api_key.txt
+data/새 텍스트 문서.txt
+
+# 소방청 원본 데이터 (용량 큼, 공모전 사이트에서 직접 다운로드)
+data/서울소방재난본부_화재출동 현황/
+data/서울특별시소방재난본부_서울소방재난본부_구급출동 현황/
+data/소방청_전국 다중이용업소 현황/
+data/유동인구 대체 데이터/
+data/전국 화재 현황/
+data/202112_202512_주민등록인구및세대현황_연간.csv
+
+# 원본 대용량 데이터
+data/raw/living_population/
+data/raw/building_ledger/building_raw.csv
+data/raw/building_ledger/checkpoint.json
+data/raw/satellite_images/
+
+# Vision 캐시 (base64 이미지 포함)
+data/processed/vision_cache/
+
+# 로그
+app_stdout.log
+app_stderr.log
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+env/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude 설정
+.claude/
+
+# 임시 파일
+test_vision.py
+todolist.txt

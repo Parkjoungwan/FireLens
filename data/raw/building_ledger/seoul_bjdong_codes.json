@@ -1,0 +1,2337 @@
+[
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10100",
+    "name": "서울특별시 종로구 청운동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10200",
+    "name": "서울특별시 종로구 신교동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10300",
+    "name": "서울특별시 종로구 궁정동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10400",
+    "name": "서울특별시 종로구 효자동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10500",
+    "name": "서울특별시 종로구 창성동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10600",
+    "name": "서울특별시 종로구 통의동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10700",
+    "name": "서울특별시 종로구 적선동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10800",
+    "name": "서울특별시 종로구 통인동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "10900",
+    "name": "서울특별시 종로구 누상동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11000",
+    "name": "서울특별시 종로구 누하동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11100",
+    "name": "서울특별시 종로구 옥인동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11200",
+    "name": "서울특별시 종로구 체부동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11300",
+    "name": "서울특별시 종로구 필운동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11400",
+    "name": "서울특별시 종로구 내자동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11500",
+    "name": "서울특별시 종로구 사직동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11600",
+    "name": "서울특별시 종로구 도렴동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11700",
+    "name": "서울특별시 종로구 당주동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11800",
+    "name": "서울특별시 종로구 내수동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "11900",
+    "name": "서울특별시 종로구 세종로"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12000",
+    "name": "서울특별시 종로구 신문로1가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12100",
+    "name": "서울특별시 종로구 신문로2가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12200",
+    "name": "서울특별시 종로구 청진동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12300",
+    "name": "서울특별시 종로구 서린동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12400",
+    "name": "서울특별시 종로구 수송동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12500",
+    "name": "서울특별시 종로구 중학동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12600",
+    "name": "서울특별시 종로구 종로1가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12700",
+    "name": "서울특별시 종로구 공평동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12800",
+    "name": "서울특별시 종로구 관훈동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "12900",
+    "name": "서울특별시 종로구 견지동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13000",
+    "name": "서울특별시 종로구 와룡동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13100",
+    "name": "서울특별시 종로구 권농동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13200",
+    "name": "서울특별시 종로구 운니동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13300",
+    "name": "서울특별시 종로구 익선동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13400",
+    "name": "서울특별시 종로구 경운동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13500",
+    "name": "서울특별시 종로구 관철동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13600",
+    "name": "서울특별시 종로구 인사동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13700",
+    "name": "서울특별시 종로구 낙원동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13800",
+    "name": "서울특별시 종로구 종로2가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "13900",
+    "name": "서울특별시 종로구 팔판동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14000",
+    "name": "서울특별시 종로구 삼청동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14100",
+    "name": "서울특별시 종로구 안국동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14200",
+    "name": "서울특별시 종로구 소격동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14300",
+    "name": "서울특별시 종로구 화동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14400",
+    "name": "서울특별시 종로구 사간동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14500",
+    "name": "서울특별시 종로구 송현동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14600",
+    "name": "서울특별시 종로구 가회동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14700",
+    "name": "서울특별시 종로구 재동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14800",
+    "name": "서울특별시 종로구 계동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "14900",
+    "name": "서울특별시 종로구 원서동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15000",
+    "name": "서울특별시 종로구 훈정동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15100",
+    "name": "서울특별시 종로구 묘동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15200",
+    "name": "서울특별시 종로구 봉익동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15300",
+    "name": "서울특별시 종로구 돈의동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15400",
+    "name": "서울특별시 종로구 장사동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15500",
+    "name": "서울특별시 종로구 관수동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15600",
+    "name": "서울특별시 종로구 종로3가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15700",
+    "name": "서울특별시 종로구 인의동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15800",
+    "name": "서울특별시 종로구 예지동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "15900",
+    "name": "서울특별시 종로구 원남동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16000",
+    "name": "서울특별시 종로구 연지동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16100",
+    "name": "서울특별시 종로구 종로4가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16200",
+    "name": "서울특별시 종로구 효제동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16300",
+    "name": "서울특별시 종로구 종로5가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16400",
+    "name": "서울특별시 종로구 종로6가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16500",
+    "name": "서울특별시 종로구 이화동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16600",
+    "name": "서울특별시 종로구 연건동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16700",
+    "name": "서울특별시 종로구 충신동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16800",
+    "name": "서울특별시 종로구 동숭동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "16900",
+    "name": "서울특별시 종로구 혜화동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17000",
+    "name": "서울특별시 종로구 명륜1가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17100",
+    "name": "서울특별시 종로구 명륜2가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17200",
+    "name": "서울특별시 종로구 명륜4가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17300",
+    "name": "서울특별시 종로구 명륜3가"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17400",
+    "name": "서울특별시 종로구 창신동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17500",
+    "name": "서울특별시 종로구 숭인동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17600",
+    "name": "서울특별시 종로구 교남동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17700",
+    "name": "서울특별시 종로구 평동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17800",
+    "name": "서울특별시 종로구 송월동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "17900",
+    "name": "서울특별시 종로구 홍파동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18000",
+    "name": "서울특별시 종로구 교북동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18100",
+    "name": "서울특별시 종로구 행촌동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18200",
+    "name": "서울특별시 종로구 구기동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18300",
+    "name": "서울특별시 종로구 평창동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18400",
+    "name": "서울특별시 종로구 부암동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18500",
+    "name": "서울특별시 종로구 홍지동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18600",
+    "name": "서울특별시 종로구 신영동"
+  },
+  {
+    "sigunguCd": "11110",
+    "bjdongCd": "18700",
+    "name": "서울특별시 종로구 무악동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10100",
+    "name": "서울특별시 중구 무교동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10200",
+    "name": "서울특별시 중구 다동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10300",
+    "name": "서울특별시 중구 태평로1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10400",
+    "name": "서울특별시 중구 을지로1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10500",
+    "name": "서울특별시 중구 을지로2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10600",
+    "name": "서울특별시 중구 남대문로1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10700",
+    "name": "서울특별시 중구 삼각동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10800",
+    "name": "서울특별시 중구 수하동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "10900",
+    "name": "서울특별시 중구 장교동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11000",
+    "name": "서울특별시 중구 수표동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11100",
+    "name": "서울특별시 중구 소공동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11200",
+    "name": "서울특별시 중구 남창동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11300",
+    "name": "서울특별시 중구 북창동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11400",
+    "name": "서울특별시 중구 태평로2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11500",
+    "name": "서울특별시 중구 남대문로2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11600",
+    "name": "서울특별시 중구 남대문로3가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11700",
+    "name": "서울특별시 중구 남대문로4가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11800",
+    "name": "서울특별시 중구 남대문로5가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "11900",
+    "name": "서울특별시 중구 봉래동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12000",
+    "name": "서울특별시 중구 봉래동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12100",
+    "name": "서울특별시 중구 회현동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12200",
+    "name": "서울특별시 중구 회현동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12300",
+    "name": "서울특별시 중구 회현동3가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12400",
+    "name": "서울특별시 중구 충무로1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12500",
+    "name": "서울특별시 중구 충무로2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12600",
+    "name": "서울특별시 중구 명동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12700",
+    "name": "서울특별시 중구 명동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12800",
+    "name": "서울특별시 중구 남산동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "12900",
+    "name": "서울특별시 중구 남산동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13000",
+    "name": "서울특별시 중구 남산동3가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13100",
+    "name": "서울특별시 중구 저동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13200",
+    "name": "서울특별시 중구 충무로4가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13300",
+    "name": "서울특별시 중구 충무로5가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13400",
+    "name": "서울특별시 중구 인현동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13500",
+    "name": "서울특별시 중구 예관동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13600",
+    "name": "서울특별시 중구 묵정동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13700",
+    "name": "서울특별시 중구 필동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13800",
+    "name": "서울특별시 중구 필동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "13900",
+    "name": "서울특별시 중구 필동3가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14000",
+    "name": "서울특별시 중구 남학동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14100",
+    "name": "서울특별시 중구 주자동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14200",
+    "name": "서울특별시 중구 예장동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14300",
+    "name": "서울특별시 중구 장충동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14400",
+    "name": "서울특별시 중구 장충동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14500",
+    "name": "서울특별시 중구 광희동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14600",
+    "name": "서울특별시 중구 광희동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14700",
+    "name": "서울특별시 중구 쌍림동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14800",
+    "name": "서울특별시 중구 을지로6가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "14900",
+    "name": "서울특별시 중구 을지로7가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15000",
+    "name": "서울특별시 중구 을지로4가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15100",
+    "name": "서울특별시 중구 을지로5가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15200",
+    "name": "서울특별시 중구 주교동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15300",
+    "name": "서울특별시 중구 방산동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15400",
+    "name": "서울특별시 중구 오장동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15500",
+    "name": "서울특별시 중구 을지로3가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15600",
+    "name": "서울특별시 중구 입정동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15700",
+    "name": "서울특별시 중구 산림동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15800",
+    "name": "서울특별시 중구 충무로3가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "15900",
+    "name": "서울특별시 중구 초동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16000",
+    "name": "서울특별시 중구 인현동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16100",
+    "name": "서울특별시 중구 저동2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16200",
+    "name": "서울특별시 중구 신당동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16300",
+    "name": "서울특별시 중구 흥인동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16400",
+    "name": "서울특별시 중구 무학동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16500",
+    "name": "서울특별시 중구 황학동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16600",
+    "name": "서울특별시 중구 서소문동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16700",
+    "name": "서울특별시 중구 정동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16800",
+    "name": "서울특별시 중구 순화동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "16900",
+    "name": "서울특별시 중구 의주로1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "17000",
+    "name": "서울특별시 중구 충정로1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "17100",
+    "name": "서울특별시 중구 중림동"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "17200",
+    "name": "서울특별시 중구 의주로2가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "17300",
+    "name": "서울특별시 중구 만리동1가"
+  },
+  {
+    "sigunguCd": "11140",
+    "bjdongCd": "17400",
+    "name": "서울특별시 중구 만리동2가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10100",
+    "name": "서울특별시 용산구 후암동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10200",
+    "name": "서울특별시 용산구 용산동2가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10300",
+    "name": "서울특별시 용산구 용산동4가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10400",
+    "name": "서울특별시 용산구 갈월동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10500",
+    "name": "서울특별시 용산구 남영동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10600",
+    "name": "서울특별시 용산구 용산동1가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10700",
+    "name": "서울특별시 용산구 동자동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10800",
+    "name": "서울특별시 용산구 서계동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "10900",
+    "name": "서울특별시 용산구 청파동1가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11000",
+    "name": "서울특별시 용산구 청파동2가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11100",
+    "name": "서울특별시 용산구 청파동3가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11200",
+    "name": "서울특별시 용산구 원효로1가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11300",
+    "name": "서울특별시 용산구 원효로2가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11400",
+    "name": "서울특별시 용산구 신창동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11500",
+    "name": "서울특별시 용산구 산천동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11600",
+    "name": "서울특별시 용산구 청암동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11700",
+    "name": "서울특별시 용산구 원효로3가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11800",
+    "name": "서울특별시 용산구 원효로4가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "11900",
+    "name": "서울특별시 용산구 효창동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12000",
+    "name": "서울특별시 용산구 도원동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12100",
+    "name": "서울특별시 용산구 용문동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12200",
+    "name": "서울특별시 용산구 문배동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12300",
+    "name": "서울특별시 용산구 신계동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12400",
+    "name": "서울특별시 용산구 한강로1가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12500",
+    "name": "서울특별시 용산구 한강로2가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12600",
+    "name": "서울특별시 용산구 용산동3가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12700",
+    "name": "서울특별시 용산구 용산동5가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12800",
+    "name": "서울특별시 용산구 한강로3가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "12900",
+    "name": "서울특별시 용산구 이촌동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13000",
+    "name": "서울특별시 용산구 이태원동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13100",
+    "name": "서울특별시 용산구 한남동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13200",
+    "name": "서울특별시 용산구 동빙고동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13300",
+    "name": "서울특별시 용산구 서빙고동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13400",
+    "name": "서울특별시 용산구 주성동"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13500",
+    "name": "서울특별시 용산구 용산동6가"
+  },
+  {
+    "sigunguCd": "11170",
+    "bjdongCd": "13600",
+    "name": "서울특별시 용산구 보광동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10100",
+    "name": "서울특별시 성동구 상왕십리동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10200",
+    "name": "서울특별시 성동구 하왕십리동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10300",
+    "name": "서울특별시 성동구 홍익동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10400",
+    "name": "서울특별시 성동구 도선동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10500",
+    "name": "서울특별시 성동구 마장동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10600",
+    "name": "서울특별시 성동구 사근동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10700",
+    "name": "서울특별시 성동구 행당동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10800",
+    "name": "서울특별시 성동구 응봉동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "10900",
+    "name": "서울특별시 성동구 금호동1가"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11000",
+    "name": "서울특별시 성동구 금호동2가"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11100",
+    "name": "서울특별시 성동구 금호동3가"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11200",
+    "name": "서울특별시 성동구 금호동4가"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11300",
+    "name": "서울특별시 성동구 옥수동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11400",
+    "name": "서울특별시 성동구 성수동1가"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11500",
+    "name": "서울특별시 성동구 성수동2가"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "11800",
+    "name": "서울특별시 성동구 송정동"
+  },
+  {
+    "sigunguCd": "11200",
+    "bjdongCd": "12200",
+    "name": "서울특별시 성동구 용답동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10100",
+    "name": "서울특별시 광진구 중곡동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10200",
+    "name": "서울특별시 광진구 능동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10300",
+    "name": "서울특별시 광진구 구의동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10400",
+    "name": "서울특별시 광진구 광장동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10500",
+    "name": "서울특별시 광진구 자양동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10700",
+    "name": "서울특별시 광진구 화양동"
+  },
+  {
+    "sigunguCd": "11215",
+    "bjdongCd": "10900",
+    "name": "서울특별시 광진구 군자동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10100",
+    "name": "서울특별시 동대문구 신설동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10200",
+    "name": "서울특별시 동대문구 용두동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10300",
+    "name": "서울특별시 동대문구 제기동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10400",
+    "name": "서울특별시 동대문구 전농동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10500",
+    "name": "서울특별시 동대문구 답십리동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10600",
+    "name": "서울특별시 동대문구 장안동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10700",
+    "name": "서울특별시 동대문구 청량리동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10800",
+    "name": "서울특별시 동대문구 회기동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "10900",
+    "name": "서울특별시 동대문구 휘경동"
+  },
+  {
+    "sigunguCd": "11230",
+    "bjdongCd": "11000",
+    "name": "서울특별시 동대문구 이문동"
+  },
+  {
+    "sigunguCd": "11260",
+    "bjdongCd": "10100",
+    "name": "서울특별시 중랑구 면목동"
+  },
+  {
+    "sigunguCd": "11260",
+    "bjdongCd": "10200",
+    "name": "서울특별시 중랑구 상봉동"
+  },
+  {
+    "sigunguCd": "11260",
+    "bjdongCd": "10300",
+    "name": "서울특별시 중랑구 중화동"
+  },
+  {
+    "sigunguCd": "11260",
+    "bjdongCd": "10400",
+    "name": "서울특별시 중랑구 묵동"
+  },
+  {
+    "sigunguCd": "11260",
+    "bjdongCd": "10500",
+    "name": "서울특별시 중랑구 망우동"
+  },
+  {
+    "sigunguCd": "11260",
+    "bjdongCd": "10600",
+    "name": "서울특별시 중랑구 신내동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10100",
+    "name": "서울특별시 성북구 성북동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10200",
+    "name": "서울특별시 성북구 성북동1가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10300",
+    "name": "서울특별시 성북구 돈암동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10400",
+    "name": "서울특별시 성북구 동소문동1가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10500",
+    "name": "서울특별시 성북구 동소문동2가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10600",
+    "name": "서울특별시 성북구 동소문동3가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10700",
+    "name": "서울특별시 성북구 동소문동4가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10800",
+    "name": "서울특별시 성북구 동소문동5가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "10900",
+    "name": "서울특별시 성북구 동소문동6가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11000",
+    "name": "서울특별시 성북구 동소문동7가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11100",
+    "name": "서울특별시 성북구 삼선동1가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11200",
+    "name": "서울특별시 성북구 삼선동2가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11300",
+    "name": "서울특별시 성북구 삼선동3가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11400",
+    "name": "서울특별시 성북구 삼선동4가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11500",
+    "name": "서울특별시 성북구 삼선동5가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11600",
+    "name": "서울특별시 성북구 동선동1가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11700",
+    "name": "서울특별시 성북구 동선동2가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11800",
+    "name": "서울특별시 성북구 동선동3가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "11900",
+    "name": "서울특별시 성북구 동선동4가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12000",
+    "name": "서울특별시 성북구 동선동5가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12100",
+    "name": "서울특별시 성북구 안암동1가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12200",
+    "name": "서울특별시 성북구 안암동2가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12300",
+    "name": "서울특별시 성북구 안암동3가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12400",
+    "name": "서울특별시 성북구 안암동4가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12500",
+    "name": "서울특별시 성북구 안암동5가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12600",
+    "name": "서울특별시 성북구 보문동4가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12700",
+    "name": "서울특별시 성북구 보문동5가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12800",
+    "name": "서울특별시 성북구 보문동6가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "12900",
+    "name": "서울특별시 성북구 보문동7가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13000",
+    "name": "서울특별시 성북구 보문동1가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13100",
+    "name": "서울특별시 성북구 보문동2가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13200",
+    "name": "서울특별시 성북구 보문동3가"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13300",
+    "name": "서울특별시 성북구 정릉동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13400",
+    "name": "서울특별시 성북구 길음동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13500",
+    "name": "서울특별시 성북구 종암동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13600",
+    "name": "서울특별시 성북구 하월곡동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13700",
+    "name": "서울특별시 성북구 상월곡동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13800",
+    "name": "서울특별시 성북구 장위동"
+  },
+  {
+    "sigunguCd": "11290",
+    "bjdongCd": "13900",
+    "name": "서울특별시 성북구 석관동"
+  },
+  {
+    "sigunguCd": "11305",
+    "bjdongCd": "10100",
+    "name": "서울특별시 강북구 미아동"
+  },
+  {
+    "sigunguCd": "11305",
+    "bjdongCd": "10200",
+    "name": "서울특별시 강북구 번동"
+  },
+  {
+    "sigunguCd": "11305",
+    "bjdongCd": "10300",
+    "name": "서울특별시 강북구 수유동"
+  },
+  {
+    "sigunguCd": "11305",
+    "bjdongCd": "10400",
+    "name": "서울특별시 강북구 우이동"
+  },
+  {
+    "sigunguCd": "11320",
+    "bjdongCd": "10500",
+    "name": "서울특별시 도봉구 쌍문동"
+  },
+  {
+    "sigunguCd": "11320",
+    "bjdongCd": "10600",
+    "name": "서울특별시 도봉구 방학동"
+  },
+  {
+    "sigunguCd": "11320",
+    "bjdongCd": "10700",
+    "name": "서울특별시 도봉구 창동"
+  },
+  {
+    "sigunguCd": "11320",
+    "bjdongCd": "10800",
+    "name": "서울특별시 도봉구 도봉동"
+  },
+  {
+    "sigunguCd": "11350",
+    "bjdongCd": "10200",
+    "name": "서울특별시 노원구 월계동"
+  },
+  {
+    "sigunguCd": "11350",
+    "bjdongCd": "10300",
+    "name": "서울특별시 노원구 공릉동"
+  },
+  {
+    "sigunguCd": "11350",
+    "bjdongCd": "10400",
+    "name": "서울특별시 노원구 하계동"
+  },
+  {
+    "sigunguCd": "11350",
+    "bjdongCd": "10500",
+    "name": "서울특별시 노원구 상계동"
+  },
+  {
+    "sigunguCd": "11350",
+    "bjdongCd": "10600",
+    "name": "서울특별시 노원구 중계동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10100",
+    "name": "서울특별시 은평구 수색동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10200",
+    "name": "서울특별시 은평구 녹번동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10300",
+    "name": "서울특별시 은평구 불광동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10400",
+    "name": "서울특별시 은평구 갈현동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10500",
+    "name": "서울특별시 은평구 구산동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10600",
+    "name": "서울특별시 은평구 대조동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10700",
+    "name": "서울특별시 은평구 응암동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10800",
+    "name": "서울특별시 은평구 역촌동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "10900",
+    "name": "서울특별시 은평구 신사동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "11000",
+    "name": "서울특별시 은평구 증산동"
+  },
+  {
+    "sigunguCd": "11380",
+    "bjdongCd": "11400",
+    "name": "서울특별시 은평구 진관동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10100",
+    "name": "서울특별시 서대문구 충정로2가"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10200",
+    "name": "서울특별시 서대문구 충정로3가"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10300",
+    "name": "서울특별시 서대문구 합동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10400",
+    "name": "서울특별시 서대문구 미근동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10500",
+    "name": "서울특별시 서대문구 냉천동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10600",
+    "name": "서울특별시 서대문구 천연동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10700",
+    "name": "서울특별시 서대문구 옥천동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10800",
+    "name": "서울특별시 서대문구 영천동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "10900",
+    "name": "서울특별시 서대문구 현저동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11000",
+    "name": "서울특별시 서대문구 북아현동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11100",
+    "name": "서울특별시 서대문구 홍제동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11200",
+    "name": "서울특별시 서대문구 대현동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11300",
+    "name": "서울특별시 서대문구 대신동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11400",
+    "name": "서울특별시 서대문구 신촌동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11500",
+    "name": "서울특별시 서대문구 봉원동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11600",
+    "name": "서울특별시 서대문구 창천동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11700",
+    "name": "서울특별시 서대문구 연희동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11800",
+    "name": "서울특별시 서대문구 홍은동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "11900",
+    "name": "서울특별시 서대문구 북가좌동"
+  },
+  {
+    "sigunguCd": "11410",
+    "bjdongCd": "12000",
+    "name": "서울특별시 서대문구 남가좌동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10100",
+    "name": "서울특별시 마포구 아현동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10200",
+    "name": "서울특별시 마포구 공덕동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10300",
+    "name": "서울특별시 마포구 신공덕동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10400",
+    "name": "서울특별시 마포구 도화동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10500",
+    "name": "서울특별시 마포구 용강동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10600",
+    "name": "서울특별시 마포구 토정동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10700",
+    "name": "서울특별시 마포구 마포동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10800",
+    "name": "서울특별시 마포구 대흥동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "10900",
+    "name": "서울특별시 마포구 염리동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11000",
+    "name": "서울특별시 마포구 노고산동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11100",
+    "name": "서울특별시 마포구 신수동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11200",
+    "name": "서울특별시 마포구 현석동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11300",
+    "name": "서울특별시 마포구 구수동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11400",
+    "name": "서울특별시 마포구 창전동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11500",
+    "name": "서울특별시 마포구 상수동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11600",
+    "name": "서울특별시 마포구 하중동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11700",
+    "name": "서울특별시 마포구 신정동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "11800",
+    "name": "서울특별시 마포구 당인동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12000",
+    "name": "서울특별시 마포구 서교동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12100",
+    "name": "서울특별시 마포구 동교동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12200",
+    "name": "서울특별시 마포구 합정동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12300",
+    "name": "서울특별시 마포구 망원동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12400",
+    "name": "서울특별시 마포구 연남동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12500",
+    "name": "서울특별시 마포구 성산동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12600",
+    "name": "서울특별시 마포구 중동"
+  },
+  {
+    "sigunguCd": "11440",
+    "bjdongCd": "12700",
+    "name": "서울특별시 마포구 상암동"
+  },
+  {
+    "sigunguCd": "11470",
+    "bjdongCd": "10100",
+    "name": "서울특별시 양천구 신정동"
+  },
+  {
+    "sigunguCd": "11470",
+    "bjdongCd": "10200",
+    "name": "서울특별시 양천구 목동"
+  },
+  {
+    "sigunguCd": "11470",
+    "bjdongCd": "10300",
+    "name": "서울특별시 양천구 신월동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10100",
+    "name": "서울특별시 강서구 염창동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10200",
+    "name": "서울특별시 강서구 등촌동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10300",
+    "name": "서울특별시 강서구 화곡동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10400",
+    "name": "서울특별시 강서구 가양동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10500",
+    "name": "서울특별시 강서구 마곡동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10600",
+    "name": "서울특별시 강서구 내발산동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10700",
+    "name": "서울특별시 강서구 외발산동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10800",
+    "name": "서울특별시 강서구 공항동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "10900",
+    "name": "서울특별시 강서구 방화동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "11000",
+    "name": "서울특별시 강서구 개화동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "11100",
+    "name": "서울특별시 강서구 과해동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "11200",
+    "name": "서울특별시 강서구 오곡동"
+  },
+  {
+    "sigunguCd": "11500",
+    "bjdongCd": "11300",
+    "name": "서울특별시 강서구 오쇠동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10100",
+    "name": "서울특별시 구로구 신도림동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10200",
+    "name": "서울특별시 구로구 구로동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10300",
+    "name": "서울특별시 구로구 가리봉동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10600",
+    "name": "서울특별시 구로구 고척동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10700",
+    "name": "서울특별시 구로구 개봉동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10800",
+    "name": "서울특별시 구로구 오류동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "10900",
+    "name": "서울특별시 구로구 궁동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "11000",
+    "name": "서울특별시 구로구 온수동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "11100",
+    "name": "서울특별시 구로구 천왕동"
+  },
+  {
+    "sigunguCd": "11530",
+    "bjdongCd": "11200",
+    "name": "서울특별시 구로구 항동"
+  },
+  {
+    "sigunguCd": "11545",
+    "bjdongCd": "10100",
+    "name": "서울특별시 금천구 가산동"
+  },
+  {
+    "sigunguCd": "11545",
+    "bjdongCd": "10200",
+    "name": "서울특별시 금천구 독산동"
+  },
+  {
+    "sigunguCd": "11545",
+    "bjdongCd": "10300",
+    "name": "서울특별시 금천구 시흥동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10100",
+    "name": "서울특별시 영등포구 영등포동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10200",
+    "name": "서울특별시 영등포구 영등포동1가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10300",
+    "name": "서울특별시 영등포구 영등포동2가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10400",
+    "name": "서울특별시 영등포구 영등포동3가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10500",
+    "name": "서울특별시 영등포구 영등포동4가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10600",
+    "name": "서울특별시 영등포구 영등포동5가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10700",
+    "name": "서울특별시 영등포구 영등포동6가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10800",
+    "name": "서울특별시 영등포구 영등포동7가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "10900",
+    "name": "서울특별시 영등포구 영등포동8가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11000",
+    "name": "서울특별시 영등포구 여의도동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11100",
+    "name": "서울특별시 영등포구 당산동1가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11200",
+    "name": "서울특별시 영등포구 당산동2가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11300",
+    "name": "서울특별시 영등포구 당산동3가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11400",
+    "name": "서울특별시 영등포구 당산동4가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11500",
+    "name": "서울특별시 영등포구 당산동5가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11600",
+    "name": "서울특별시 영등포구 당산동6가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11700",
+    "name": "서울특별시 영등포구 당산동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11800",
+    "name": "서울특별시 영등포구 도림동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "11900",
+    "name": "서울특별시 영등포구 문래동1가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12000",
+    "name": "서울특별시 영등포구 문래동2가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12100",
+    "name": "서울특별시 영등포구 문래동3가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12200",
+    "name": "서울특별시 영등포구 문래동4가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12300",
+    "name": "서울특별시 영등포구 문래동5가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12400",
+    "name": "서울특별시 영등포구 문래동6가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12500",
+    "name": "서울특별시 영등포구 양평동1가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12600",
+    "name": "서울특별시 영등포구 양평동2가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12700",
+    "name": "서울특별시 영등포구 양평동3가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12800",
+    "name": "서울특별시 영등포구 양평동4가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "12900",
+    "name": "서울특별시 영등포구 양평동5가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "13000",
+    "name": "서울특별시 영등포구 양평동6가"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "13100",
+    "name": "서울특별시 영등포구 양화동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "13200",
+    "name": "서울특별시 영등포구 신길동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "13300",
+    "name": "서울특별시 영등포구 대림동"
+  },
+  {
+    "sigunguCd": "11560",
+    "bjdongCd": "13400",
+    "name": "서울특별시 영등포구 양평동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10100",
+    "name": "서울특별시 동작구 노량진동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10200",
+    "name": "서울특별시 동작구 상도동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10300",
+    "name": "서울특별시 동작구 상도1동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10400",
+    "name": "서울특별시 동작구 본동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10500",
+    "name": "서울특별시 동작구 흑석동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10600",
+    "name": "서울특별시 동작구 동작동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10700",
+    "name": "서울특별시 동작구 사당동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10800",
+    "name": "서울특별시 동작구 대방동"
+  },
+  {
+    "sigunguCd": "11590",
+    "bjdongCd": "10900",
+    "name": "서울특별시 동작구 신대방동"
+  },
+  {
+    "sigunguCd": "11620",
+    "bjdongCd": "10100",
+    "name": "서울특별시 관악구 봉천동"
+  },
+  {
+    "sigunguCd": "11620",
+    "bjdongCd": "10200",
+    "name": "서울특별시 관악구 신림동"
+  },
+  {
+    "sigunguCd": "11620",
+    "bjdongCd": "10300",
+    "name": "서울특별시 관악구 남현동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10100",
+    "name": "서울특별시 서초구 방배동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10200",
+    "name": "서울특별시 서초구 양재동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10300",
+    "name": "서울특별시 서초구 우면동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10400",
+    "name": "서울특별시 서초구 원지동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10600",
+    "name": "서울특별시 서초구 잠원동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10700",
+    "name": "서울특별시 서초구 반포동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10800",
+    "name": "서울특별시 서초구 서초동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "10900",
+    "name": "서울특별시 서초구 내곡동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "11000",
+    "name": "서울특별시 서초구 염곡동"
+  },
+  {
+    "sigunguCd": "11650",
+    "bjdongCd": "11100",
+    "name": "서울특별시 서초구 신원동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10100",
+    "name": "서울특별시 강남구 역삼동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10300",
+    "name": "서울특별시 강남구 개포동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10400",
+    "name": "서울특별시 강남구 청담동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10500",
+    "name": "서울특별시 강남구 삼성동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10600",
+    "name": "서울특별시 강남구 대치동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10700",
+    "name": "서울특별시 강남구 신사동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "10800",
+    "name": "서울특별시 강남구 논현동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11000",
+    "name": "서울특별시 강남구 압구정동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11100",
+    "name": "서울특별시 강남구 세곡동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11200",
+    "name": "서울특별시 강남구 자곡동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11300",
+    "name": "서울특별시 강남구 율현동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11400",
+    "name": "서울특별시 강남구 일원동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11500",
+    "name": "서울특별시 강남구 수서동"
+  },
+  {
+    "sigunguCd": "11680",
+    "bjdongCd": "11800",
+    "name": "서울특별시 강남구 도곡동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10100",
+    "name": "서울특별시 송파구 잠실동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10200",
+    "name": "서울특별시 송파구 신천동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10300",
+    "name": "서울특별시 송파구 풍납동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10400",
+    "name": "서울특별시 송파구 송파동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10500",
+    "name": "서울특별시 송파구 석촌동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10600",
+    "name": "서울특별시 송파구 삼전동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10700",
+    "name": "서울특별시 송파구 가락동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10800",
+    "name": "서울특별시 송파구 문정동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "10900",
+    "name": "서울특별시 송파구 장지동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "11100",
+    "name": "서울특별시 송파구 방이동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "11200",
+    "name": "서울특별시 송파구 오금동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "11300",
+    "name": "서울특별시 송파구 거여동"
+  },
+  {
+    "sigunguCd": "11710",
+    "bjdongCd": "11400",
+    "name": "서울특별시 송파구 마천동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10100",
+    "name": "서울특별시 강동구 명일동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10200",
+    "name": "서울특별시 강동구 고덕동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10300",
+    "name": "서울특별시 강동구 상일동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10500",
+    "name": "서울특별시 강동구 길동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10600",
+    "name": "서울특별시 강동구 둔촌동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10700",
+    "name": "서울특별시 강동구 암사동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10800",
+    "name": "서울특별시 강동구 성내동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "10900",
+    "name": "서울특별시 강동구 천호동"
+  },
+  {
+    "sigunguCd": "11740",
+    "bjdongCd": "11000",
+    "name": "서울특별시 강동구 강일동"
+  }
+]

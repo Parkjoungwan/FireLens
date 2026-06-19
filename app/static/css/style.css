@@ -1,0 +1,533 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #232635;
+  --border: #2e3148;
+  --text: #e8eaf0;
+  --text-muted: #8b90a7;
+  --red: #e74c3c;
+  --orange: #e67e22;
+  --yellow: #f1c40f;
+  --green: #2ecc71;
+  --blue: #3498db;
+  --purple: #9b59b6;
+}
+
+body {
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── 헤더 ── */
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  height: 52px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.legend-wrap {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.legend-bar {
+  width: 120px;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #2ecc71, #f1c40f, #e74c3c);
+}
+
+/* ── 레이아웃 ── */
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+#map {
+  flex: 1;
+}
+
+aside {
+  width: 340px;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+/* ── 기본 패널 ── */
+.panel-hint {
+  text-align: center;
+  padding: 32px 16px 24px;
+  color: var(--text-muted);
+}
+
+.hint-icon { font-size: 48px; margin-bottom: 12px; }
+.panel-hint p { font-size: 14px; line-height: 1.6; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.stat-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 12px;
+  text-align: center;
+}
+
+.stat-card.red   { border-color: #e74c3c44; }
+.stat-card.orange{ border-color: #e67e2244; }
+.stat-card.blue  { border-color: #3498db44; }
+.stat-card.gray  { border-color: #ffffff22; }
+
+.stat-num {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-card.red   .stat-num { color: var(--red); }
+.stat-card.orange .stat-num{ color: var(--orange); }
+.stat-card.blue  .stat-num { color: var(--blue); }
+.stat-card.gray  .stat-num { color: var(--text-muted); }
+
+.stat-label { font-size: 11px; color: var(--text-muted); }
+
+/* ── 상세 패널 ── */
+#btn-back {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+#btn-back:hover { background: var(--surface2); }
+
+.dong-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.dong-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.risk-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-최우선 { background: #e74c3c33; color: #e74c3c; border: 1px solid #e74c3c55; }
+.badge-잠재   { background: #e67e2233; color: #e67e22; border: 1px solid #e67e2255; }
+.badge-이력   { background: #3498db33; color: #3498db; border: 1px solid #3498db55; }
+.badge-관찰   { background: #ffffff11; color: var(--text-muted); border: 1px solid var(--border); }
+
+/* 위험지수 바 */
+.risk-score-wrap {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.risk-score-label { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; }
+
+.risk-score-bar-wrap {
+  background: #ffffff11;
+  border-radius: 4px;
+  height: 8px;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.risk-score-bar {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(to right, #f1c40f, #e74c3c);
+  transition: width 0.5s ease;
+}
+
+.risk-score-num {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--red);
+  text-align: right;
+}
+
+/* 지표 그리드 */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.metric {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 10px 8px;
+  text-align: center;
+}
+
+.metric-icon { font-size: 20px; margin-bottom: 4px; }
+.metric-val  { font-size: 16px; font-weight: 700; }
+.metric-label{ font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+/* 구성요인 */
+.component-chart {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.comp-title { font-size: 11px; color: var(--text-muted); margin-bottom: 10px; }
+
+.comp-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+
+.comp-lbl { width: 90px; color: var(--text-muted); flex-shrink: 0; font-size: 11px; white-space: nowrap; }
+
+.comp-bar-wrap {
+  flex: 1;
+  background: #ffffff11;
+  border-radius: 3px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.comp-bar { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+
+.comp-pct { width: 32px; text-align: right; color: var(--text-muted); }
+
+/* AI 분석 */
+.ai-section { margin-top: 4px; }
+
+.analyze-info {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: none;
+}
+
+.analyze-info-ok   { color: #2ecc71; }
+.analyze-info-warn { color: var(--orange); }
+
+/* 마크다운 리포트 스타일 */
+.ai-report h1, .ai-report h2, .ai-report h3 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 8px 0 4px;
+  color: var(--text);
+}
+.ai-report p   { margin-bottom: 8px; }
+.ai-report strong { color: var(--text); font-weight: 700; }
+.ai-report ul, .ai-report ol { padding-left: 16px; margin-bottom: 8px; }
+.ai-report li  { margin-bottom: 3px; }
+
+#btn-analyze {
+  width: 100%;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+}
+
+#btn-analyze:hover { opacity: 0.9; }
+#btn-analyze:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-icon { font-size: 16px; }
+
+#ai-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.spinner {
+  width: 20px; height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--red);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.sat-image-wrap {
+  position: relative;
+  margin: 12px 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.sat-image-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.sat-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: #000000aa;
+  padding: 4px 8px;
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.vision-grid {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.vision-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+
+.v-label { width: 72px; color: var(--text-muted); flex-shrink: 0; }
+
+.v-bar-wrap {
+  flex: 1;
+  background: #ffffff11;
+  border-radius: 3px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.v-bar { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+.v-bar.red    { background: var(--red); }
+.v-bar.orange { background: var(--orange); }
+
+.v-num { width: 28px; text-align: right; font-weight: 600; }
+
+.alley-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.alley-wide       { background: #2ecc7133; color: #2ecc71; border: 1px solid #2ecc7155; }
+.alley-narrow     { background: #e67e2233; color: #e67e22; border: 1px solid #e67e2255; }
+.alley-very_narrow{ background: #e74c3c33; color: #e74c3c; border: 1px solid #e74c3c55; }
+
+.ai-report {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--red);
+  border-radius: 0 10px 10px 0;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* 커스텀 단일 툴팁 */
+.map-tip {
+  position: fixed;
+  z-index: 9000;
+  pointer-events: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 20px #00000088;
+  font-size: 13px;
+  transform: translate(12px, -50%);
+}
+
+.map-tip .popup-name  { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+.map-tip .popup-idx   { color: var(--red); font-weight: 600; }
+.map-tip .popup-cls   { color: var(--text-muted); font-size: 11px; margin-top: 2px; }
+
+/* 지도 팝업/툴팁 커스텀 */
+.leaflet-popup-content-wrapper,
+.leaflet-tooltip {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 20px #00000088 !important;
+  padding: 8px 12px !important;
+}
+
+.leaflet-tooltip::before { display: none; }
+.leaflet-interactive:focus { outline: none; }
+.leaflet-popup-tip { background: var(--surface) !important; }
+
+.popup-inner { font-size: 13px; }
+.popup-name  { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+.popup-idx   { color: var(--red); font-weight: 600; }
+.popup-cls   { color: var(--text-muted); font-size: 11px; margin-top: 2px; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ── 모달 ── */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: #00000088;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  width: 360px;
+  padding: 24px;
+  box-shadow: 0 8px 40px #00000066;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.modal-body {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 13px;
+  gap: 12px;
+}
+
+.modal-key  { color: var(--text-muted); flex-shrink: 0; }
+.modal-val  { text-align: right; }
+.modal-cost { color: var(--orange); font-weight: 700; }
+
+.modal-notice {
+  font-size: 11px;
+  color: #2ecc71;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-btn-cancel {
+  flex: 1;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modal-btn-cancel:hover { background: var(--border); }
+
+.modal-btn-confirm {
+  flex: 2;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal-btn-confirm:hover { opacity: 0.9; }
