@@ -1,0 +1,406 @@
+/* FireLens 랜딩 — FIRELENS_SYSTEM 디자인 시스템 */
+
+:root {
+  --bg:        #0A0A0A;
+  --card:      #111111;
+  --accent:    #FF4500;
+  --cyan:      #00FFFF;
+  --text:      #FFFFFF;
+  --muted:     #888888;
+  --border:    #333333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.accent { color: var(--accent); font-weight: 700; }
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9em;
+  color: var(--muted);
+  background: #1a1a1a;
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+/* ── 헤더 ── */
+.lp-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 60px;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.lp-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.lp-logo-box {
+  width: 32px; height: 32px;
+  background: var(--accent);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px rgba(255,69,0,0.45);
+  flex-shrink: 0;
+}
+.lp-logo-lens { width: 20px; height: 20px; }
+
+.lp-logo-text {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+}
+.lp-logo-text .accent { font-weight: 800; }
+
+.lp-header-cta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  transition: all 0.2s;
+}
+.lp-header-cta:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── 공통 라벨 ── */
+.lp-label-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.lp-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 2px 7px;
+  text-transform: uppercase;
+}
+
+.lp-label-mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.lp-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  min-height: calc(100vh - 53px);
+  padding: 60px;
+}
+
+.lp-corner {
+  position: absolute;
+  width: 28px; height: 28px;
+  border: 2px solid var(--accent);
+  opacity: 0.6;
+}
+.lp-corner.tl { top: 28px; left: 28px; border-right: none; border-bottom: none; }
+.lp-corner.br { bottom: 28px; right: 28px; border-left: none; border-top: none; }
+
+.lp-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.lp-hero-sub {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 460px;
+  border-left: 2px solid var(--border);
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
+.lp-hero-cta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.lp-btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 14px 24px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.lp-btn-fill {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 500;
+}
+.lp-btn-fill:hover { background: #ff5a1f; box-shadow: 0 0 20px rgba(255,69,0,0.4); }
+.lp-btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.lp-btn-outline:hover { border-color: var(--text); }
+
+.lp-hero-stats {
+  display: flex;
+  gap: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.lp-stat-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--accent);
+}
+.lp-stat-unit {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ── HERO 지도 ── */
+.lp-map-frame {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  height: 520px;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+#hero-map {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+}
+
+.lp-map-badge {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 500;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: rgba(10,10,10,0.8);
+  padding: 3px 8px;
+}
+
+.lp-map-legend {
+  position: absolute;
+  bottom: 12px; right: 12px;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: rgba(10,10,10,0.82);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 2px;
+}
+.lp-map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.lp-map-legend i {
+  width: 10px; height: 10px;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+/* ── 섹션 공통 ── */
+.lp-section {
+  padding: 80px 60px;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+
+.lp-section-title {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+}
+
+.lp-subhead {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 40px;
+}
+
+/* ── 카드 그리드 ── */
+.lp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lp-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s;
+}
+.lp-card:hover { border-color: #4a4a4a; }
+
+.lp-card-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  width: 30px; height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.lp-card-icon {
+  width: 44px; height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+.lp-card-icon svg { width: 24px; height: 24px; }
+
+.lp-card-quote {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.lp-card-headline {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.lp-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.lp-card-body {
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.lp-card-body b { color: var(--text); font-weight: 700; }
+
+.lp-card-result {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.lp-source-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+.lp-source-tags span {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 2px 7px;
+}
+
+/* ── 푸터 ── */
+.lp-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 60px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ── Leaflet 툴팁(hero) ── */
+.leaflet-tooltip.hero-tip {
+  background: var(--card);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.leaflet-tooltip.hero-tip::before { display: none; }
+
+/* ── 반응형 ── */
+@media (max-width: 980px) {
+  .lp-hero { grid-template-columns: 1fr; padding: 40px 24px; }
+  .lp-hero-title { font-size: 38px; }
+  .lp-map-frame { height: 360px; }
+  .lp-section { padding: 60px 24px; }
+  .lp-grid { grid-template-columns: 1fr; }
+  .lp-header { padding: 14px 24px; }
+  .lp-hero-stats { gap: 24px; flex-wrap: wrap; }
+}

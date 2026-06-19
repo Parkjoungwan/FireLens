@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FireLens — 위험지수 대시보드</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/" style="text-decoration:none;color:inherit">
+    <span class="logo-box">
+      <svg class="logo-lens" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9.5"/>
+        <line x1="14.31" y1="8" x2="20.05" y2="8"/>
+        <line x1="9.69" y1="8" x2="3.95" y2="8"/>
+        <line x1="7.38" y1="12" x2="4.51" y2="16.95"/>
+        <line x1="9.69" y1="16" x2="3.95" y2="16"/>
+        <line x1="14.31" y1="16" x2="20.05" y2="16"/>
+        <line x1="16.62" y1="12" x2="19.49" y2="7.05"/>
+      </svg>
+    </span>
+    <span class="logo-text">FIRE<span style="color:var(--accent)">LENS</span></span>
+  </a>
+  <div class="subtitle">VULNERABILITY MAP</div>
+  <div class="legend-wrap">
+    <span class="legend-label">위험도</span>
+    <span class="leg-lo">낮음</span>
+    <div class="legend-bar"></div>
+    <span class="leg-hi">높음</span>
+  </div>
+</header>
+
+<div id="map-tip" class="map-tip" style="display:none"></div>
+<div class="layout">
+  <!-- 지도 -->
+  <div id="map"></div>
+
+  <!-- 사이드 패널 -->
+  <aside id="panel">
+    <div id="panel-default">
+      <div class="panel-hint">
+        <div class="hint-icon">🗺️</div>
+        <p>지도에서 행정동을 클릭하면<br>상세 위험 분석을 확인할 수 있습니다</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card red">
+          <div class="stat-num" id="cnt-urgent">—</div>
+          <div class="stat-label">최우선 대응</div>
+        </div>
+        <div class="stat-card orange">
+          <div class="stat-num" id="cnt-latent">—</div>
+          <div class="stat-label">잠재 위험</div>
+        </div>
+        <div class="stat-card blue">
+          <div class="stat-num" id="cnt-hist">—</div>
+          <div class="stat-label">이력 관리</div>
+        </div>
+        <div class="stat-card gray">
+          <div class="stat-num" id="cnt-watch">—</div>
+          <div class="stat-label">관찰 지역</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-detail" style="display:none">
+      <button id="btn-back" onclick="showDefault()">← 목록</button>
+
+      <div class="dong-header">
+        <div class="dong-name" id="d-name">—</div>
+        <div class="risk-badge" id="d-badge">—</div>
+      </div>
+
+      <div class="risk-score-wrap">
+        <div class="risk-score-label">종합 위험지수</div>
+        <div class="risk-score-bar-wrap">
+          <div class="risk-score-bar" id="d-bar"></div>
+        </div>
+        <div class="risk-score-num" id="d-score">—</div>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-icon">🔥</div>
+          <div class="metric-val" id="d-fire">—</div>
+          <div class="metric-label">화재율(1만명당)</div>
+        </div>
+        <div class="metric">
+          <div class="metric-icon">👴</div>
+          <div class="metric-val" id="d-elderly">—</div>
+          <div class="metric-label">65세+ 비율</div>
+        </div>
+        <div class="metric">
+          <div class="metric-icon">🚒</div>
+          <div class="metric-val" id="d-dist">—</div>
+          <div class="metric-label">119센터 거리</div>
+        </div>
+        <div class="metric">
+          <div class="metric-icon">🏚️</div>
+          <div class="metric-val" id="d-old">—</div>
+          <div class="metric-label">노후건물 비율</div>
+        </div>
+      </div>
+
+      <div class="component-chart">
+        <div class="comp-title">위험도 구성 요인</div>
+        <div class="comp-bars" id="d-components"></div>
+      </div>
+
+      <!-- AI 분석 섹션 -->
+      <div class="ai-section">
+        <div class="analyze-info" id="analyze-info"></div>
+        <button id="btn-analyze" onclick="runAnalysis()">
+          <span class="btn-icon">🛰️</span> AI 위성 분석 실행
+        </button>
+        <div id="ai-loading" style="display:none">
+          <div class="spinner"></div>
+          <span>위성 이미지 분석 중...</span>
+        </div>
+        <div id="ai-result" style="display:none">
+          <div class="sat-image-wrap">
+            <img id="sat-img" src="" alt="위성 이미지">
+            <div class="sat-label">핫스팟 위성 이미지 (ESRI)</div>
+          </div>
+          <div class="vision-grid">
+            <div class="vision-item">
+              <span class="v-label">건물 노후도</span>
+              <div class="v-bar-wrap"><div class="v-bar red" id="v-det"></div></div>
+              <span class="v-num" id="v-det-num">—</span>
+            </div>
+            <div class="vision-item">
+              <span class="v-label">건물 밀집도</span>
+              <div class="v-bar-wrap"><div class="v-bar orange" id="v-den"></div></div>
+              <span class="v-num" id="v-den-num">—</span>
+            </div>
+            <div class="vision-item">
+              <span class="v-label">AI 위험점수</span>
+              <div class="v-bar-wrap"><div class="v-bar red" id="v-risk"></div></div>
+              <span class="v-num" id="v-risk-num">—</span>
+            </div>
+          </div>
+          <div class="alley-tag" id="v-alley"></div>
+          <div class="ai-report" id="ai-report"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- 분석 확인 모달 -->
+<div id="modal-overlay" class="modal-overlay" style="display:none" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-title">🛰️ AI 위성 분석 확인</div>
+    <div class="modal-body">
+      <div class="modal-row">
+        <span class="modal-key">분석 대상</span>
+        <span class="modal-val" id="modal-dong">—</span>
+      </div>
+      <div class="modal-row">
+        <span class="modal-key">분석 이미지</span>
+        <span class="modal-val">핫스팟 위성 이미지 <b>1장</b></span>
+      </div>
+      <div class="modal-row">
+        <span class="modal-key">API 호출</span>
+        <span class="modal-val">Vision 분석 1회 + 리포트 생성 1회</span>
+      </div>
+      <div class="modal-row">
+        <span class="modal-key">예상 비용</span>
+        <span class="modal-val modal-cost">약 $0.01 (약 14원)</span>
+      </div>
+      <div class="modal-notice">✅ 한 번 분석하면 캐시에 저장되어 재호출 시 무료입니다.</div>
+    </div>
+    <div class="modal-actions">
+      <button class="modal-btn-cancel" onclick="closeModal()">취소</button>
+      <button class="modal-btn-confirm" onclick="confirmAnalysis()">분석 시작</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="/js/map.js"></script>
+</body>
+</html>

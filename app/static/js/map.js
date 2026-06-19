@@ -29,12 +29,12 @@ const COMP_META = [
 
 // ── 색상 함수 ────────────────────────────────────────────────
 function riskColor(val) {
-  if (val == null) return '#2e3148';
-  if (val >= 80)   return '#c0392b';
-  if (val >= 60)   return '#e74c3c';
-  if (val >= 40)   return '#e67e22';
-  if (val >= 20)   return '#f1c40f';
-  return '#2ecc71';
+  if (val == null) return '#1a1a1a';
+  if (val >= 80)   return '#8B0000';
+  if (val >= 60)   return '#CC3300';
+  if (val >= 40)   return '#FF6600';
+  if (val >= 20)   return '#FFAA00';
+  return '#2ECC71';
 }
 
 // ── 지도 초기화 ──────────────────────────────────────────────
@@ -60,6 +60,7 @@ function initMap() {
     attribution: '© OpenStreetMap © CARTO',
     subdomains: 'abcd',
     maxZoom: 19,
+    className: 'lp-basemap',
   }).addTo(map);
 }
 
@@ -86,10 +87,10 @@ async function loadGeoJSON() {
       const p = feature.properties;
       return {
         fillColor:   riskColor(p.risk_index),
-        fillOpacity: 0.72,
-        color:       '#ffffff',
+        fillOpacity: 0.78,
+        color:       '#0A0A0A',
         weight:      0.4,
-        opacity:     0.5,
+        opacity:     0.6,
       };
     },
     onEachFeature: (feature, layer) => {
@@ -103,7 +104,7 @@ async function loadGeoJSON() {
               geojsonLayer.resetStyle(currentHoverLayer);
           }
           currentHoverLayer = e.target;
-          e.target.setStyle({ weight: 2, color: '#fff', fillOpacity: 0.9 });
+          e.target.setStyle({ weight: 2, color: '#FF4500', fillOpacity: 0.95 });
           e.target.bringToFront();
           tip.innerHTML = `
             <div class="popup-name">${name}</div>
@@ -195,7 +196,7 @@ function selectDong(adm_cd) {
   geojsonLayer.eachLayer(layer => {
     const lp = layer.feature?.properties;
     if (lp?.adm_cd === adm_cd) {
-      layer.setStyle({ weight: 2.5, color: '#fff', fillOpacity: 0.95 });
+      layer.setStyle({ weight: 2.5, color: '#FF4500', fillOpacity: 0.98 });
     } else {
       geojsonLayer.resetStyle(layer);
     }

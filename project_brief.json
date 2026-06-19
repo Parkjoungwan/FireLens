@@ -1,0 +1,137 @@
+{
+  "project": {
+    "name": "FireLens",
+    "tagline": "소방안전 빅데이터와 AI 위성 분석으로 서울 화재 취약지역을 찾아냅니다",
+    "target_competition": "제6회 소방안전 빅데이터 활용 및 아이디어 경진대회",
+    "submission_category": "서비스개발"
+  },
+
+  "service_overview": {
+    "summary": "서울 426개 행정동의 구조적 화재 취약성을 정량화하고, AI 위성 이미지 분석으로 현장 위험을 검증하는 소방 정책 지원 인터랙티브 시각화 서비스",
+    "differentiation_from_existing": {
+      "existing_services": "소방청 화재위험예보 — 날씨·건조도 기반 단기 경보 (오늘 위험한가)",
+      "our_angle": "구조적 만성 취약지 식별 — 과거 화재 이력 + 고령 취약계층 + 소방 접근성 + 건물 노후도 복합 분석 (만성적으로 위험한 곳은 어디인가)"
+    },
+    "core_features": [
+      {
+        "feature": "복합 위험지수 산출",
+        "detail": "화재율(35%) + 65세+비율(25%) + 119센터거리(20%) + 노후건물비율(12%) + 화재당피해(8%) 퍼센타일 가중 합산 → 0-100 지수"
+      },
+      {
+        "feature": "2차원 위험 분류 매트릭스",
+        "detail": "과거 화재 이력 × 구조적 취약성 → 최우선대응(53개) / 잠재위험(76개) / 이력관리(119개) / 관찰지역(178개)"
+      },
+      {
+        "feature": "AI 위성 이미지 분석 (온디맨드)",
+        "detail": "ESRI World Imagery(2025.11~2026.01 촬영, Maxar Vivid Advanced) + Claude Vision API → 건물 노후도·골목 폭·밀집도·구조 위험 자동 평가"
+      },
+      {
+        "feature": "소방 자원 배분 지원 LLM 리포트",
+        "detail": "정량 데이터 + Vision 분석 결과를 Claude가 자연어 정책 권고 리포트로 생성"
+      },
+      {
+        "feature": "인터랙티브 지도 대시보드",
+        "detail": "Leaflet.js choropleth 지도, 행정동 클릭 → 상세 지표 + AI 분석 패널"
+      }
+    ],
+    "tech_stack": {
+      "backend": "FastAPI (Python)",
+      "frontend": "Leaflet.js + Vanilla HTML/CSS/JS",
+      "ai_vision": "Claude claude-sonnet-4-6 (Vision + Text)",
+      "satellite": "ESRI World Imagery REST API (무료, 키 불필요)",
+      "data_processing": "pandas, geopandas, scikit-learn, DBSCAN"
+    },
+    "bigdata_platform_data_used": [
+      "서울시 화재출동 현황 2021~2023 (좌표, 출동거리, 발화원인 포함)",
+      "전국 화재 현황 2021~2023",
+      "전국 다중이용업소 현황 2021~2023"
+    ],
+    "supplementary_data": [
+      "행안부 생활인구 (행정동별 연령대 분포)",
+      "건축물대장 API (노후건물비율, 평균층수)",
+      "주민등록 인구통계 (세대유형)",
+      "행정동 경계 GeoJSON (vuski/admdongkor)"
+    ]
+  },
+
+  "competition": {
+    "name": "제6회 소방안전 빅데이터 활용 및 아이디어 경진대회",
+    "host": "소방청",
+    "organizer": "소방안전 빅데이터 플랫폼 운영 사업단",
+    "category": "서비스개발 부문 (웹·앱 개발 및 구현)",
+    "schedule": {
+      "submission_period": "2026-06-08 ~ 2026-08-05",
+      "first_review": "2026-08-10 ~ 2026-08-14",
+      "presentation": "2026-09-09",
+      "awards": "2026-09-16"
+    },
+    "prize_pool": "총 2,070만원 (12팀)",
+    "evaluation_criteria": [
+      "플랫폼 내 실제 서비스 제공 가능성",
+      "공익적 활용 및 데이터 공개 가능성",
+      "플랫폼 데이터 1건 이상 실질적 활용 (미충족 시 심사 제외)"
+    ],
+    "submission_requirements": {
+      "form": "참가신청서 + 서약서 (네이버폼)",
+      "email": "기획서 1부 → bigdata-119@naver.com",
+      "service_dev_required": "스토리보드, 화면 캡처, 서비스 구동 확인 자료"
+    },
+    "our_compliance": {
+      "platform_data_used": true,
+      "platform_data_items": ["서울시 화재출동 현황", "전국 화재 현황", "다중이용업소 현황"],
+      "service_implemented": true,
+      "demo_ready": true
+    }
+  },
+
+  "customer": {
+    "primary": {
+      "who": "소방서 행정 담당자 / 구청 안전담당 공무원 / 소방정책 기획자",
+      "problems": [
+        "예산 제한으로 모든 지역에 소방 안전 점검·교육을 투입할 수 없어 어디에 먼저 자원을 배분할지 판단 기준이 없음",
+        "기존 화재위험예보는 날씨 기반 단기 경보라 만성 취약지 식별에 쓸 수 없음",
+        "노후 건물 데이터가 구 단위로만 집계되어 행정동 단위 세밀한 정책 수립 불가",
+        "소방차 도달 시간이 긴 외곽 지역의 취약성을 정량적으로 파악하기 어려움"
+      ],
+      "our_solution": "행정동 단위 복합 위험지수 + AI 위성 이미지로 현장 구조 위험 검증 → 자원 배분 우선순위 근거 제공"
+    },
+    "secondary": {
+      "who": "복지관·돌봄 서비스 기관 / 노인 안전 담당자",
+      "problems": [
+        "65세 이상 독거노인 밀집 지역과 화재 위험 높은 지역의 교집합을 파악하기 어려움",
+        "화재경보기 설치, 안전 교육 등 복지-소방 연계 사업 대상 지역 선정에 객관적 기준 없음"
+      ],
+      "our_solution": "65세+비율과 화재율 2차원 매트릭스로 취약계층 집중 지역 식별 → 복지-소방 연계 사업 타겟팅"
+    },
+    "tertiary": {
+      "who": "소방안전 연구자 / 도시안전 데이터 분석가",
+      "problems": [
+        "기존 ML 모델은 공간 자기상관 문제로 GroupKFold R² ≈ 0이 되는 등 예측력 약함",
+        "구조적 취약성 지표(노후도, 접근성)와 실제 화재 결과의 관계를 행정동 단위로 검증한 연구 부재"
+      ],
+      "our_solution": "퍼센타일 복합지수 + DBSCAN 핫스팟 탐지 + Vision 기반 노후도 측정으로 새로운 분석 레이어 제공"
+    }
+  },
+
+  "keywords": {
+    "core_message": "기상 예보가 아닌 구조적 만성 취약지 식별 — 소방 자원 배분의 근거를 만든다",
+    "emphasis_keywords": [
+      "만성 취약지",
+      "소방 자원 배분",
+      "행정동 단위 정밀 분석",
+      "소방 대응 공백",
+      "고령 취약계층 + 화재",
+      "AI 위성 이미지 현장 검증",
+      "복합 위험지수",
+      "최우선 대응 지역",
+      "구조적 화재 취약성",
+      "복지-소방 연계"
+    ],
+    "avoid_keywords": [
+      "화재 예측 모델 (R²≈0으로 신뢰도 낮음)",
+      "실시간 (우리 서비스는 정적 분석)",
+      "전국 (서울 한정)"
+    ],
+    "pitch_one_liner": "소방청 빅데이터와 AI 위성 분석으로 서울에서 소방차가 늦게 도착하는 노후 골목의 노인 밀집 지역을 찾아내고, 제한된 소방 예산을 어디에 써야 하는지 알려드립니다."
+  }
+}

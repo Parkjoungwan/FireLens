@@ -3,171 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FireMap — 서울 화재 안전 취약지역</title>
+  <title>FireLens — 서울 화재 안전 취약지역 분석</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/css/landing.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">🔥 FireMap</div>
-  <div class="subtitle">서울 화재 안전 취약지역 예측 시각화</div>
-  <div class="legend-wrap">
-    <span class="legend-label">위험도</span>
-    <span class="leg-lo">낮음</span>
-    <div class="legend-bar"></div>
-    <span class="leg-hi">높음</span>
-  </div>
+<!-- ── 헤더 ── -->
+<header class="lp-header">
+  <a class="lp-logo" href="/">
+    <span class="lp-logo-box">
+      <svg class="lp-logo-lens" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9.5"/>
+        <line x1="14.31" y1="8" x2="20.05" y2="8"/>
+        <line x1="9.69" y1="8" x2="3.95" y2="8"/>
+        <line x1="7.38" y1="12" x2="4.51" y2="16.95"/>
+        <line x1="9.69" y1="16" x2="3.95" y2="16"/>
+        <line x1="14.31" y1="16" x2="20.05" y2="16"/>
+        <line x1="16.62" y1="12" x2="19.49" y2="7.05"/>
+      </svg>
+    </span>
+    <span class="lp-logo-text">FIRE<span class="accent">LENS</span></span>
+  </a>
+  <a class="lp-header-cta" href="/dashboard.html">VULNERABILITY MAP →</a>
 </header>
 
-<div id="map-tip" class="map-tip" style="display:none"></div>
-<div class="layout">
-  <!-- 지도 -->
-  <div id="map"></div>
+<!-- ── 01 HERO ── -->
+<section class="lp-hero">
+  <div class="lp-corner tl"></div>
+  <div class="lp-corner br"></div>
 
-  <!-- 사이드 패널 -->
-  <aside id="panel">
-    <div id="panel-default">
-      <div class="panel-hint">
-        <div class="hint-icon">🗺️</div>
-        <p>지도에서 행정동을 클릭하면<br>상세 위험 분석을 확인할 수 있습니다</p>
-      </div>
-      <div class="stat-grid">
-        <div class="stat-card red">
-          <div class="stat-num" id="cnt-urgent">—</div>
-          <div class="stat-label">최우선 대응</div>
-        </div>
-        <div class="stat-card orange">
-          <div class="stat-num" id="cnt-latent">—</div>
-          <div class="stat-label">잠재 위험</div>
-        </div>
-        <div class="stat-card blue">
-          <div class="stat-num" id="cnt-hist">—</div>
-          <div class="stat-label">이력 관리</div>
-        </div>
-        <div class="stat-card gray">
-          <div class="stat-num" id="cnt-watch">—</div>
-          <div class="stat-label">관찰 지역</div>
-        </div>
-      </div>
+  <div class="lp-hero-left">
+    <div class="lp-label-row">
+      <span class="lp-badge">STRUCTURAL ALERT</span>
+      <span class="lp-label-mono">01_SEOUL_CORE_METRICS</span>
     </div>
 
-    <div id="panel-detail" style="display:none">
-      <button id="btn-back" onclick="showDefault()">← 목록</button>
+    <h1 class="lp-hero-title">
+      소방차가 늦게 도착하는 골목,<br>
+      <span class="accent">노인이 혼자 사는 노후 건물.</span><br>
+      이곳은 어디일까요?
+    </h1>
 
-      <div class="dong-header">
-        <div class="dong-name" id="d-name">—</div>
-        <div class="risk-badge" id="d-badge">—</div>
-      </div>
+    <p class="lp-hero-sub">
+      FireLens는 서울 426개 행정동의 구조적 화재 취약성을 수치로 보여주고,
+      소방 예산을 어디에 먼저 써야 하는지 데이터에 기반한 근거를 만들어드립니다.
+    </p>
 
-      <div class="risk-score-wrap">
-        <div class="risk-score-label">종합 위험지수</div>
-        <div class="risk-score-bar-wrap">
-          <div class="risk-score-bar" id="d-bar"></div>
-        </div>
-        <div class="risk-score-num" id="d-score">—</div>
-      </div>
-
-      <div class="metrics-grid">
-        <div class="metric">
-          <div class="metric-icon">🔥</div>
-          <div class="metric-val" id="d-fire">—</div>
-          <div class="metric-label">화재율(1만명당)</div>
-        </div>
-        <div class="metric">
-          <div class="metric-icon">👴</div>
-          <div class="metric-val" id="d-elderly">—</div>
-          <div class="metric-label">65세+ 비율</div>
-        </div>
-        <div class="metric">
-          <div class="metric-icon">🚒</div>
-          <div class="metric-val" id="d-dist">—</div>
-          <div class="metric-label">119센터 거리</div>
-        </div>
-        <div class="metric">
-          <div class="metric-icon">🏚️</div>
-          <div class="metric-val" id="d-old">—</div>
-          <div class="metric-label">노후건물 비율</div>
-        </div>
-      </div>
-
-      <div class="component-chart">
-        <div class="comp-title">위험도 구성 요인</div>
-        <div class="comp-bars" id="d-components"></div>
-      </div>
-
-      <!-- AI 분석 섹션 -->
-      <div class="ai-section">
-        <div class="analyze-info" id="analyze-info"></div>
-        <button id="btn-analyze" onclick="runAnalysis()">
-          <span class="btn-icon">🛰️</span> AI 위성 분석 실행
-        </button>
-        <div id="ai-loading" style="display:none">
-          <div class="spinner"></div>
-          <span>위성 이미지 분석 중...</span>
-        </div>
-        <div id="ai-result" style="display:none">
-          <div class="sat-image-wrap">
-            <img id="sat-img" src="" alt="위성 이미지">
-            <div class="sat-label">핫스팟 위성 이미지 (ESRI)</div>
-          </div>
-          <div class="vision-grid">
-            <div class="vision-item">
-              <span class="v-label">건물 노후도</span>
-              <div class="v-bar-wrap"><div class="v-bar red" id="v-det"></div></div>
-              <span class="v-num" id="v-det-num">—</span>
-            </div>
-            <div class="vision-item">
-              <span class="v-label">건물 밀집도</span>
-              <div class="v-bar-wrap"><div class="v-bar orange" id="v-den"></div></div>
-              <span class="v-num" id="v-den-num">—</span>
-            </div>
-            <div class="vision-item">
-              <span class="v-label">AI 위험점수</span>
-              <div class="v-bar-wrap"><div class="v-bar red" id="v-risk"></div></div>
-              <span class="v-num" id="v-risk-num">—</span>
-            </div>
-          </div>
-          <div class="alley-tag" id="v-alley"></div>
-          <div class="ai-report" id="ai-report"></div>
-        </div>
-      </div>
+    <div class="lp-hero-cta">
+      <a class="lp-btn lp-btn-fill" href="/dashboard.html">CHECK YOUR DISTRICT →</a>
+      <a class="lp-btn lp-btn-outline" href="#services">TECHNICAL SPECS</a>
     </div>
-  </aside>
-</div>
 
-<!-- 분석 확인 모달 -->
-<div id="modal-overlay" class="modal-overlay" style="display:none" onclick="closeModal()">
-  <div class="modal" onclick="event.stopPropagation()">
-    <div class="modal-title">🛰️ AI 위성 분석 확인</div>
-    <div class="modal-body">
-      <div class="modal-row">
-        <span class="modal-key">분석 대상</span>
-        <span class="modal-val" id="modal-dong">—</span>
+    <div class="lp-hero-stats">
+      <div class="lp-stat">
+        <div class="lp-stat-val">426</div>
+        <div class="lp-stat-unit">행정동 전수 분석</div>
       </div>
-      <div class="modal-row">
-        <span class="modal-key">분석 이미지</span>
-        <span class="modal-val">핫스팟 위성 이미지 <b>1장</b></span>
+      <div class="lp-stat">
+        <div class="lp-stat-val">12.4%</div>
+        <div class="lp-stat-unit">최우선 대응 지역</div>
       </div>
-      <div class="modal-row">
-        <span class="modal-key">API 호출</span>
-        <span class="modal-val">Vision 분석 1회 + 리포트 생성 1회</span>
+      <div class="lp-stat">
+        <div class="lp-stat-val">2.3×</div>
+        <div class="lp-stat-unit">소방 접근성 격차</div>
       </div>
-      <div class="modal-row">
-        <span class="modal-key">예상 비용</span>
-        <span class="modal-val modal-cost">약 $0.01 (약 14원)</span>
-      </div>
-      <div class="modal-notice">✅ 한 번 분석하면 캐시에 저장되어 재호출 시 무료입니다.</div>
-    </div>
-    <div class="modal-actions">
-      <button class="modal-btn-cancel" onclick="closeModal()">취소</button>
-      <button class="modal-btn-confirm" onclick="confirmAnalysis()">분석 시작</button>
     </div>
   </div>
-</div>
+
+  <div class="lp-hero-right">
+    <div class="lp-map-frame">
+      <div id="hero-map"></div>
+      <div class="lp-map-badge">HIGH RISK SECTOR_721</div>
+      <div class="lp-map-legend">
+        <span><i style="background:#8B0000"></i>최고위험</span>
+        <span><i style="background:#CC3300"></i>고위험</span>
+        <span><i style="background:#FF6600"></i>중위험</span>
+        <span><i style="background:#FFAA00"></i>관심</span>
+        <span><i style="background:#2ECC71"></i>안전</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 02 PROBLEM ── -->
+<section class="lp-section" id="problem">
+  <div class="lp-label-row">
+    <span class="lp-badge">02_PROBLEM_SPACE</span>
+    <span class="lp-label-mono">FIELD_REPORT</span>
+  </div>
+  <h2 class="lp-section-title">Problem</h2>
+  <div class="lp-subhead">현장 담당자들이 반복적으로 겪는 3가지 문제</div>
+
+  <div class="lp-grid">
+    <article class="lp-card">
+      <div class="lp-card-num">01</div>
+      <div class="lp-card-quote">"어디가 위험한지 숫자로 말해달라는데, 데이터가 없습니다."</div>
+      <p class="lp-card-body">
+        현재 소방청 화재위험예보는 날씨·건조도 기반의 단기 경보입니다.
+        구청 안전담당 공무원이 소방 안전 교육 예산 배분 계획을 짤 때,
+        "우리 구에서 어느 동이 가장 취약한가"를 뒷받침할
+        <b>행정동 단위 정량 지표가 없습니다.</b>
+      </p>
+    </article>
+
+    <article class="lp-card">
+      <div class="lp-card-num">02</div>
+      <div class="lp-card-headline">소방차 도달 시간의 격차가 최대 <span class="accent">2.3배</span>까지 벌어집니다.</div>
+      <p class="lp-card-body">
+        2021~2023년 서울 화재출동 데이터 <span class="accent">38,197건</span>을 분석한 결과,
+        119안전센터에서 현장까지 평균 거리는 1.73km이지만
+        일부 행정동은 <span class="accent">4.05km</span>에 달합니다.
+        같은 서울 안에서 소방 인프라 접근성이 2.3배 차이가 납니다.
+      </p>
+    </article>
+
+    <article class="lp-card">
+      <div class="lp-card-num">03</div>
+      <div class="lp-card-headline">화재 위험이 높은 곳과 대피가 어려운 계층이 겹쳐있지만, 그 교집합이 보이지 않습니다.</div>
+      <p class="lp-card-body">
+        서울 최우선 대응 행정동의 65세 이상 인구 비율은 평균 21.2%,
+        일부 지역은 <span class="accent">27.5%</span>에 달합니다.
+        화재 발생률 상위 행정동(만명당 32건)과 고령 인구 밀집 지역이 겹치는 곳이
+        소방 안전 교육·화재경보기 설치의 최우선 대상이지만,
+        이 교집합을 한눈에 볼 수 있는 도구가 없습니다.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ── 03 SERVICES ── -->
+<section class="lp-section" id="services">
+  <div class="lp-label-row">
+    <span class="lp-badge">03_SERVICES</span>
+    <span class="lp-label-mono">CORE_CAPABILITIES</span>
+  </div>
+  <h2 class="lp-section-title">Services</h2>
+  <div class="lp-subhead">FireLens가 제공하는 3가지 분석</div>
+
+  <div class="lp-grid">
+    <!-- S1 -->
+    <article class="lp-card">
+      <div class="lp-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10z"/>
+          <circle cx="12" cy="11" r="2"/>
+        </svg>
+      </div>
+      <h3 class="lp-card-title">복합 위험지수 지도 — 426개 행정동, 5개 지표 하나의 숫자로</h3>
+      <p class="lp-card-body">
+        화재 이력·고령 인구·119 접근성·건물 노후도·피해 심각도를
+        퍼센타일 정규화 후 가중 합산해 0~100 위험지수로 변환합니다.
+      </p>
+      <p class="lp-card-result">→ 서울 전체 행정동 중 상위 <span class="accent">12.4%(53개)</span>를 최우선 대응 지역으로 식별,</p>
+      <p class="lp-card-result">→ 잠재 위험 지역 76개를 추가 분류해 총 <span class="accent">129개</span> 행정동 우선순위 근거 제공.</p>
+      <div class="lp-source-tags">
+        <span>bigdata-119</span><span>생활인구</span><span>건축물대장</span>
+      </div>
+    </article>
+
+    <!-- S2 -->
+    <article class="lp-card">
+      <div class="lp-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 13a9 9 0 0 1 9 9"/>
+          <path d="M4 18a4 4 0 0 1 4 4"/>
+          <path d="M11.5 6.5 17 1l6 6-5.5 5.5z"/>
+          <path d="m13.5 8.5-3 3"/>
+          <circle cx="5" cy="21" r="1"/>
+        </svg>
+      </div>
+      <h3 class="lp-card-title">AI 위성 현장 검증 — 2025년 11월~2026년 1월 촬영 최신 이미지 분석</h3>
+      <p class="lp-card-body">
+        위험지수가 높은 행정동의 화재 핫스팟 좌표에서 위성 이미지를 수집,
+        Claude Vision이 건물 노후도·골목 폭·밀집도를 10점 척도로 자동 평가합니다.
+        "<b>소방차가 실제로 들어갈 수 있는가</b>"를 이미지로 확인합니다.
+      </p>
+      <p class="lp-card-result">→ 최우선 대응 5개 행정동 테스트 결과 전부 골목 폭 <code>very_narrow</code>,</p>
+      <p class="lp-card-result">→ 건물 노후도 평균 <span class="accent">7.8/10</span>, 밀집도 평균 <span class="accent">9.0/10</span> 판정.</p>
+      <div class="lp-source-tags">
+        <span>Satellite 2025.11~2026.01</span><span>Claude Vision</span>
+      </div>
+    </article>
+
+    <!-- S3 -->
+    <article class="lp-card">
+      <div class="lp-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <path d="M14 2v6h6"/>
+          <path d="M8 13h8"/><path d="M8 17h8"/><path d="M8 9h2"/>
+        </svg>
+      </div>
+      <h3 class="lp-card-title">LLM 정책 리포트 — 숫자를 정책 언어로</h3>
+      <p class="lp-card-body">
+        위험지수 데이터 + AI 위성 분석 결과를 입력받아
+        소방 전문가 관점의 자연어 분석 리포트를 즉시 생성합니다.
+        "이 지역에 소방 안전 교육 예산을 우선 배분해야 하는 이유"를
+        보고서에 바로 붙여넣을 수 있는 형태로 제공합니다.
+      </p>
+      <p class="lp-card-result">→ 행정동 클릭 1회 + 버튼 1회로 <span class="accent">30초</span> 내 현장 분석 리포트 생성.</p>
+      <div class="lp-source-tags">
+        <span>Claude Sonnet</span><span>위험지수 데이터</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="lp-footer">
+  <span class="lp-label-mono">FIRELENS</span>
+  <span>제6회 소방안전 빅데이터 활용 및 아이디어 경진대회 · 서비스개발 부문</span>
+</footer>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="/js/map.js"></script>
+<script src="/js/landing.js"></script>
 </body>
 </html>
