@@ -8,6 +8,25 @@
 
 ---
 
+## 실행 화면
+
+### 랜딩 페이지
+![랜딩 페이지](data/processed/screenshots/01_landing_hero.png)
+
+### 복합 위험지수 지도 — 426개 행정동
+![위험지수 지도](data/processed/screenshots/04_dashboard_overview.png)
+
+### 행정동 상세 진단
+![상세 패널](data/processed/screenshots/05_dashboard_detail.png)
+
+### AI 위성 분석 + LLM 정책 리포트
+![AI 분석 결과](data/processed/screenshots/06_dashboard_ai_result.png)
+
+### 데이터 처리 파이프라인
+![파이프라인](data/processed/screenshots/07_data_pipeline.png)
+
+---
+
 ## 핵심 기능
 
 | 기능 | 설명 |
