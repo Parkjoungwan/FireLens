@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pandas
+geopandas
+anthropic
+requests
+pillow
+
+# 전처리 파이프라인 (src/preprocess)
+numpy
+matplotlib
+scikit-learn
