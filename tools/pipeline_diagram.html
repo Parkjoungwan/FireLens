@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg:#0A0A0A; --surface:#141414; --surface2:#1C1C1C;
+    --border:#2A2A2A; --text:#F5F5F5; --text-muted:#888;
+    --accent:#FF4500; --cyan:#00FFFF; --green:#2ECC71;
+    --mono:'IBM Plex Mono','Courier New',monospace;
+    --sans:'Pretendard','Apple SD Gothic Neo',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);font-family:var(--sans);color:var(--text);}
+  #slide{width:1600px;height:900px;background:var(--bg);position:relative;padding:48px 56px;}
+
+  /* 헤더 */
+  .head{display:flex;align-items:baseline;gap:18px;margin-bottom:6px;}
+  .head .logo{display:flex;align-items:center;gap:10px;}
+  .logo-box{width:34px;height:34px;background:var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;}
+  .logo-box svg{width:22px;height:22px;}
+  .logo-text{font-family:var(--mono);font-weight:600;font-size:20px;letter-spacing:.5px;}
+  .logo-text .ac{color:var(--accent);}
+  .head-title{font-size:26px;font-weight:700;}
+  .head-mono{font-family:var(--mono);font-size:12px;color:var(--text-muted);margin-left:auto;letter-spacing:1px;}
+  .subhead{font-family:var(--mono);font-size:13px;color:var(--text-muted);margin:8px 0 26px;letter-spacing:.5px;}
+
+  /* 파이프라인 */
+  .pipe{display:flex;align-items:stretch;gap:0;}
+  .stage{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:3px;padding:18px 16px;display:flex;flex-direction:column;min-height:540px;}
+  .stage-num{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:1.5px;margin-bottom:4px;}
+  .stage-name{font-size:18px;font-weight:700;margin-bottom:2px;}
+  .stage-en{font-family:var(--mono);font-size:10px;color:var(--text-muted);letter-spacing:1px;margin-bottom:14px;}
+  .stage-name.ac{color:var(--accent);}
+
+  .grp{margin-bottom:13px;}
+  .grp-lbl{font-family:var(--mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;border-left:2px solid var(--accent);padding-left:7px;}
+  .item{font-size:12.5px;line-height:1.55;color:var(--text);padding-left:9px;position:relative;margin-bottom:3px;}
+  .item::before{content:'';position:absolute;left:0;top:8px;width:3px;height:3px;background:var(--text-muted);border-radius:50%;}
+  .item b{color:var(--accent);font-weight:600;}
+  .item .mn{font-family:var(--mono);font-size:11px;}
+
+  .out{margin-top:auto;background:var(--surface2);border:1px solid var(--border);border-left:2px solid var(--cyan);border-radius:2px;padding:8px 10px;font-family:var(--mono);font-size:11px;color:var(--cyan);}
+
+  /* 화살표 */
+  .arrow{display:flex;align-items:center;justify-content:center;width:46px;flex:0 0 46px;}
+  .arrow svg{width:26px;height:26px;}
+
+  /* 하단 서비스 바 */
+  .service{margin-top:24px;background:linear-gradient(0deg,var(--surface),var(--surface));border:1px solid var(--accent);border-radius:3px;padding:16px 22px;display:flex;align-items:center;gap:20px;}
+  .service .tag{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:1.5px;font-weight:600;white-space:nowrap;}
+  .service .desc{font-size:14px;color:var(--text);}
+  .service .desc b{color:var(--accent);}
+  .service .arrow-in{font-family:var(--mono);color:var(--text-muted);font-size:18px;}
+
+  .foot{position:absolute;bottom:20px;left:56px;font-family:var(--mono);font-size:10px;color:var(--text-muted);letter-spacing:1px;}
+</style>
+</head>
+<body>
+<div id="slide">
+
+  <div class="head">
+    <div class="logo">
+      <span class="logo-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9.5"/>
+          <line x1="14.31" y1="8" x2="20.05" y2="8"/><line x1="9.69" y1="8" x2="3.95" y2="8"/>
+          <line x1="7.38" y1="12" x2="4.51" y2="16.95"/><line x1="9.69" y1="16" x2="3.95" y2="16"/>
+          <line x1="14.31" y1="16" x2="20.05" y2="16"/><line x1="16.62" y1="12" x2="19.49" y2="7.05"/>
+        </svg>
+      </span>
+      <span class="logo-text">FIRE<span class="ac">LENS</span></span>
+    </div>
+    <div class="head-title">데이터 처리 파이프라인</div>
+    <div class="head-mono">DATA_PIPELINE_v1</div>
+  </div>
+  <div class="subhead">수집 → 전처리 → 지수 산출 → AI 분석 → 서비스 · 전처리 스크립트 01~11 모듈화 완료</div>
+
+  <div class="pipe">
+
+    <!-- 01 수집 -->
+    <div class="stage">
+      <div class="stage-num">STAGE 01</div>
+      <div class="stage-name">데이터 수집</div>
+      <div class="stage-en">DATA COLLECTION</div>
+
+      <div class="grp">
+        <div class="grp-lbl">소방 빅데이터 플랫폼</div>
+        <div class="item">서울 화재출동 <b>38,197건</b> <span class="mn">(2021~2023)</span></div>
+        <div class="item">전국 화재 현황 <span class="mn">(인명·재산 피해)</span></div>
+        <div class="item">다중이용업소 <span class="mn">(참고용)</span></div>
+      </div>
+      <div class="grp">
+        <div class="grp-lbl">보조 데이터</div>
+        <div class="item">서울 생활인구 / 건축물대장</div>
+        <div class="item">행정동 경계 GeoJSON</div>
+        <div class="item">ESRI 위성 이미지</div>
+      </div>
+      <div class="out">→ raw CSV · GeoJSON · 위성 타일</div>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+
+    <!-- 02 전처리 -->
+    <div class="stage">
+      <div class="stage-num">STAGE 02</div>
+      <div class="stage-name">전처리</div>
+      <div class="stage-en">PREPROCESSING · 01~11</div>
+
+      <div class="grp">
+        <div class="grp-lbl">공간 처리</div>
+        <div class="item">화재 좌표 → 행정동 공간매핑</div>
+        <div class="item">119센터–현장 거리 계산</div>
+      </div>
+      <div class="grp">
+        <div class="grp-lbl">집계·결합</div>
+        <div class="item">인구·생활인구·건물 집계</div>
+        <div class="item">행정동별 5지표 정리</div>
+      </div>
+      <div class="out">→ master_table.csv (426 행정동)</div>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+
+    <!-- 03 지수 산출 -->
+    <div class="stage">
+      <div class="stage-num">STAGE 03</div>
+      <div class="stage-name">지수 산출</div>
+      <div class="stage-en">RISK INDEX</div>
+
+      <div class="grp">
+        <div class="grp-lbl">정규화·합산</div>
+        <div class="item">퍼센타일 정규화 <span class="mn">(5지표)</span></div>
+        <div class="item">가중 합산 → 위험지수 <b>0~100</b></div>
+      </div>
+      <div class="grp">
+        <div class="grp-lbl">분류·탐지</div>
+        <div class="item">2차원 분류 <span class="mn">(최우선/잠재/이력/관찰)</span></div>
+        <div class="item">DBSCAN 핫스팟 좌표 추출</div>
+      </div>
+      <div class="out">→ 위험지수 + 핫스팟 좌표</div>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+
+    <!-- 04 AI 분석 -->
+    <div class="stage">
+      <div class="stage-num">STAGE 04</div>
+      <div class="stage-name ac">AI 분석</div>
+      <div class="stage-en">AI ANALYSIS · on-demand</div>
+
+      <div class="grp">
+        <div class="grp-lbl">위성 검증</div>
+        <div class="item">핫스팟 좌표 위성 이미지 수집</div>
+        <div class="item">Claude Vision <span class="mn">(노후도·골목폭·밀집도)</span></div>
+      </div>
+      <div class="grp">
+        <div class="grp-lbl">리포트</div>
+        <div class="item">LLM 정책 리포트 생성</div>
+        <div class="item">결과 캐시 <span class="mn">(재호출 무료)</span></div>
+      </div>
+      <div class="out">→ 현장 검증 + 정책 리포트</div>
+    </div>
+
+  </div>
+
+  <!-- 서비스 출력 바 -->
+  <div class="service">
+    <span class="tag">▼ SERVICE</span>
+    <span class="desc"><b>FastAPI</b> 백엔드 · <b>Leaflet</b> 인터랙티브 대시보드 · 행정동 클릭 → 위험지수·구성요인 → 온디맨드 위성 AI 분석·리포트까지 하나의 흐름으로 연결</span>
+  </div>
+
+  <div class="foot">FireLens · 제6회 소방안전 빅데이터 활용 및 아이디어 경진대회</div>
+
+</div>
+</body>
+</html>

@@ -97,6 +97,7 @@ header {
   display: flex;
   flex: 1;
   overflow: hidden;
+  min-height: 0;
 }
 
 #map {
@@ -111,6 +112,8 @@ aside {
   overflow-y: auto;
   flex-shrink: 0;
   padding: 18px;
+  min-height: 0;
+  align-self: stretch;
 }
 
 /* ── 기본 패널 ── */

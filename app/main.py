@@ -149,7 +149,7 @@ def generate_report(row: dict, vision: dict) -> str:
     )
     msg = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=400,
+        max_tokens=1500,
         messages=[{"role": "user", "content": prompt}]
     )
     return msg.content[0].text.strip()
